@@ -1,0 +1,227 @@
+/* 
+    Created on : Sep 20, 2015, 3:34:45 PM
+    Author     : Mickey
+*/
+/**
+*  -----------------------------------------------------------
+*  MAIN SCSS
+*  -----------------------------------------------------------
+*/
+/* 
+    Created on : Sep 20, 2015, 10:52:53 PM
+    Author     : Mickey
+*/
+/**
+*  -----------------------------------------------------------
+*  SCSS RESET
+*  -----------------------------------------------------------
+*/
+h1, h2, h3, h4, p, a, ul, li,
+figure, header, html, body,
+img, nav, main, section, article {
+  margin: 0;
+  padding: 0; }
+
+li, a {
+  display: inline;
+  color: inherit;
+  list-style-type: none;
+  text-decoration: none;
+  text-decoration-color: none; }
+
+/* 
+    Created on : Sep 20, 2015, 4:51:44 PM
+    Author     : Mickey
+*/
+/**
+*  ----------------------------------------------------------------
+*  SCSS MIXINS
+*  ----------------------------------------------------------------
+*/
+@font-face {
+  font-family: strait;
+  src: url(fonts/Strait-Regular.ttf); }
+/* 
+    Created on : Sep 20, 2015, 4:49:50 PM
+    Author     : Mickey
+*/
+/**
+*  ----------------------------------------------------------------
+*  SCSS COLOR KEYWORDS
+*  ----------------------------------------------------------------
+*/
+#subnav ul {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex; }
+
+html {
+  max-width: 100vw;
+  max-height: 100vw; }
+
+body {
+  max-width: 100vw;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: strait; }
+
+#topheader {
+  background: lightgreen;
+  background-image: url(logos/recyc.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-bottom: 2px solid black;
+  width: inherit;
+  height: 15vh; }
+
+.logo-1 {
+  width: 30vw;
+  height: auto; }
+
+#headnav {
+  text-align: center;
+  background: white;
+  border-bottom: 2px solid black; }
+  #headnav ul li {
+    margin-left: 5vw;
+    margin-right: 5vw; }
+    #headnav ul li a {
+      font-size: 120%;
+      text-shadow: 0px 4px 7px #777777;
+      -webkit-transition: text-shadow 0.25s;
+      -moz-transition: text-shadow 0.25s;
+      transition: text-shadow 0.25s; }
+
+#headnav a:hover {
+  text-shadow: 0px 2px 2px #888888; }
+
+#banpic {
+  margin-left: auto;
+  margin-right: auto; }
+  #banpic img {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: auto; }
+
+#wrapmain {
+  width: 100vw;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto; }
+
+#subnav {
+  display: none;
+  width: 95vw;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; }
+  #subnav ul {
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-around;
+    -moz-justify-content: space-around;
+    -ms-justify-content: space-around;
+    justify-content: space-around;
+    margin-bottom: 3vw; }
+    #subnav ul li {
+      margin: 0.5vw;
+      -webkit-align-self: center;
+      -moz-align-self: center;
+      -ms-align-self: center;
+      align-self: center; }
+      #subnav ul li button {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(#DFDDDF, white, #9D9B9C);
+        -webkit-flex: 1;
+        -moz-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        border: 1px solid #333333;
+        box-shadow: 0px 4px 10px #666666;
+        border-radius: 5px;
+        padding: 15px;
+        font-size: 1em;
+        font-family: inherit;
+        outline-style: none;
+        -webkit-transition: box-shadow 0.25s;
+        -moz-transition: box-shadow 0.25s;
+        transition: box-shadow 0.25s; }
+
+#subnav button:hover {
+  box-shadow: 0px 2px 3px #666666; }
+
+#subnav button:active {
+  -webkit-box-shadow: 0px 2px 5px #555555 inset;
+  -moz-box-shadow: 0px 2px 5px #555555 inset;
+  -ms-box-shadow: 0px 2px 5px #555555 inset;
+  box-shadow: 0px 2px 5px #555555 inset; }
+
+#main-1 {
+  width: 95vw;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  #main-1 article header + p {
+    text-indent: 40px; }
+
+.peanut {
+  width: 30vw;
+  height: auto;
+  float: right; }
+
+#contact_pg {
+  display: none;
+  text-align: center; }
+
+.stereo {
+  width: 30vw;
+  height: auto;
+  right: 0px;
+  display: inline-block; }
+
+.phone {
+  color: blue;
+  text-decoration: underline; }
+
+.email {
+  color: red;
+  text-decoration: underline; }
+
+table {
+  border: 3px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 50px; }
+  table th {
+    border: 2px solid black;
+    font-size: 120%; }
+  table td {
+    border: 1px solid black; }
+
+#foot {
+  background: lightgreen;
+  border-top: 2px solid black;
+  text-align: center; }
+  #foot ul li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 50px; }
+
+/*# sourceMappingURL=main.css.map */

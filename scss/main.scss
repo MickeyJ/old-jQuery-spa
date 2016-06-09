@@ -1,0 +1,244 @@
+
+/* 
+    Created on : Sep 20, 2015, 3:34:45 PM
+    Author     : Mickey
+*/
+
+/**
+*  -----------------------------------------------------------
+*  MAIN SCSS
+*  -----------------------------------------------------------
+*/
+
+@import "reset";
+@import "mixin";
+@import "colors";
+
+%flex{
+  @include display(flex);
+}
+
+html{
+  max-width: 100vw;
+  max-height: 100vw;
+}
+
+body{
+  max-width: 100vw;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: strait;
+}
+
+#topheader{
+  background:lightgreen;
+  background-image: url(logos/recyc.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-bottom: 2px solid black;
+  width: inherit;
+  height: 15vh;
+  
+  
+}
+.logo-1{
+  width: 30vw;
+  height: auto;
+    
+    
+  }
+
+#headnav{
+  text-align: center;
+  background: white;
+  border-bottom: 2px solid black;
+  ul{
+    li{
+      margin-left: 5vw;
+      margin-right: 5vw;
+      a{
+        font-size: 120%;
+        text-shadow: 0px 4px 7px #777777;
+        @include transition(text-shadow 0.25s);
+        
+      }
+    }
+  }
+  
+}
+
+#headnav a:hover{
+  text-shadow: 0px 2px 2px #888888;
+}
+
+#banpic{
+  margin-left: auto;
+  margin-right: auto;
+  img{
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: auto;
+  }
+}
+
+#wrapmain{
+  width: 100vw;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  
+  
+}
+
+
+#subnav{
+  display: none;
+  width: 95vw;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  
+  ul{
+    @extend %flex;
+    @include flex-wrap(wrap);
+    @include flex-direction(row);
+    @include align-items(center);
+    @include justify-content(space-around);
+    margin-bottom: 3vw;
+    
+    li{
+      margin: 0.5vw;
+      @include align-self(center);
+      
+ 
+      button{
+        width: 100%;
+        height: 100%;
+        background: linear-gradient($grey1, white, $grey3);
+        @include flex(1);
+        border: 1px solid #333333;
+        box-shadow: 0px 4px 10px #666666;
+        border-radius: 5px;
+        padding: 15px;
+        font-size: 1em;
+        font-family: inherit;
+        outline-style: none;
+        @include transition(box-shadow 0.25s);
+   
+      }
+    }
+  }
+}
+
+#subnav button:hover{
+  box-shadow: 0px 2px 3px #666666;
+
+}
+#subnav button:active{
+  -webkit-box-shadow: 0px 2px 5px #555555 inset;
+  -moz-box-shadow: 0px 2px 5px #555555 inset;
+  -ms-box-shadow: 0px 2px 5px #555555 inset;
+  box-shadow: 0px 2px 5px #555555 inset;
+}
+
+
+#main-1{
+  width: 95vw;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+     
+  article{
+    
+    
+         
+      header + p{
+        text-indent: 40px;
+
+      }
+    
+    
+    
+    
+  }
+  
+}
+
+.peanut{
+  width: 30vw;
+  height: auto;
+  float: right;
+  
+        
+        
+}
+
+#contact_pg{
+  display: none;
+  text-align: center;
+  
+  
+  
+}
+
+.stereo{
+    width: 30vw;
+    height: auto;
+    right: 0px;
+    display: inline-block;
+}
+  
+.phone{
+  color: blue;
+  text-decoration: underline;
+}
+
+.email{
+  color: red;
+  text-decoration: underline;
+}
+
+
+table{
+  border: 3px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  
+  th{
+    border: 2px solid black;
+    font-size: 120%;
+  }
+  
+  td{
+    border: 1px solid black;
+    
+  }
+  
+}
+
+#foot{
+  background: lightgreen;
+  border-top: 2px solid black;
+  text-align: center;
+
+  ul{
+    
+    
+    
+    
+    li{
+      margin-top: 20px;
+      margin-bottom: 20px;
+      line-height: 50px;
+      
+    }
+    
+  }
+  
+}

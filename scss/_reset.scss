@@ -1,0 +1,32 @@
+/* 
+    Created on : Sep 20, 2015, 10:52:53 PM
+    Author     : Mickey
+*/
+
+/**
+*  -----------------------------------------------------------
+*  SCSS RESET
+*  -----------------------------------------------------------
+*/
+
+
+*{
+  
+  
+}
+
+h1, h2, h3, h4, p, a, ul, li, 
+figure, header, html, body, 
+img, nav, main, section, article{
+  margin: 0;
+  padding: 0;
+}
+
+
+li, a{
+  display: inline;
+  color: inherit;
+  list-style-type: none;
+  text-decoration: none;
+  text-decoration-color: none;
+}
