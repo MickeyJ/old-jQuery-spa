@@ -63,9 +63,8 @@ html {
 body {
   max-width: 100vw;
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: strait; }
+  margin: 0;
+  font-family: strait, sans-serif; }
 
 #topheader {
   background: lightgreen;
@@ -99,18 +98,20 @@ body {
 
 #banpic {
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+}
   #banpic img {
     background-size: contain;
     background-repeat: no-repeat;
-    width: 100vw;
-    height: auto; }
+    width: 100%;
+    height: 30vh; }
 
 #wrapmain {
-  width: 100vw;
+  width: 100%;
   height: auto;
-  margin-left: auto;
-  margin-right: auto; }
+  margin: 0;
+  overflow: auto;
+}
 
 #subnav {
   display: none;
@@ -181,7 +182,7 @@ body {
     text-indent: 40px; }
 
 .peanut {
-  width: 30vw;
+  width: 25vw;
   height: auto;
   float: right; }
 
